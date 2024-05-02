@@ -1,0 +1,124 @@
+[0.019s] Invoking command in '/home/piyush/robot_ws/build/description': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake /home/piyush/robot_ws/src/description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/piyush/robot_ws/install/description
+[1.070s] -- The C compiler identification is GNU 11.4.0
+[2.152s] -- The CXX compiler identification is GNU 11.4.0
+[2.310s] -- Detecting C compiler ABI info
+[2.934s] -- Detecting C compiler ABI info - done
+[2.946s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.952s] -- Detecting C compile features
+[2.959s] -- Detecting C compile features - done
+[3.002s] -- Detecting CXX compiler ABI info
+[3.180s] -- Detecting CXX compiler ABI info - done
+[3.194s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.194s] -- Detecting CXX compile features
+[3.195s] -- Detecting CXX compile features - done
+[3.520s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.053s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.408s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[4.777s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[6.150s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[6.236s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[6.345s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[6.619s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[6.804s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[8.610s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[8.646s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[8.646s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[9.613s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[9.655s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[10.055s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[10.218s] -- Looking for pthread.h
+[10.855s] -- Looking for pthread.h - found
+[10.855s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[10.979s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[10.981s] -- Found Threads: TRUE  
+[14.671s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[14.923s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[14.924s] -- Checking for module 'bullet>=2.82'
+[15.019s] --   Found bullet, version 3.05
+[15.698s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[15.879s] -- Found assimp: /usr/include (found version "5.2.0") 
+[16.573s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[16.960s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[17.239s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[17.336s] -- Looking for ignition-math6 -- found version 6.15.1
+[17.578s] -- Searching for dependencies of ignition-math6
+[17.726s] -- Looking for OGRE...
+[17.726s] -- OGRE_PREFIX_WATCH changed.
+[17.737s] -- Checking for module 'OGRE'
+[17.756s] --   Found OGRE, version 1.9.0
+[18.239s] -- Found Ogre Ghadamon (1.9.0)
+[18.293s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[18.313s] -- Looking for OGRE_Paging...
+[18.356s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[18.356s] -- Looking for OGRE_Terrain...
+[18.412s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[18.412s] -- Looking for OGRE_Property...
+[18.461s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[18.461s] -- Looking for OGRE_RTShaderSystem...
+[18.481s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[18.482s] -- Looking for OGRE_Volume...
+[18.525s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[18.526s] -- Looking for OGRE_Overlay...
+[18.537s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[18.870s] -- Looking for ignition-math6 -- found version 6.15.1
+[18.992s] -- Looking for ignition-transport8 -- found version 8.2.1
+[18.993s] -- Searching for dependencies of ignition-transport8
+[19.043s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[19.060s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[19.068s] -- Checking for module 'libzmq >= 4'
+[19.260s] --   Found libzmq , version 4.3.4
+[19.322s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[19.346s] -- Checking for module 'uuid'
+[19.407s] --   Found uuid, version 2.37.2
+[19.469s] -- Found UUID: TRUE  
+[19.510s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[19.511s] -- Searching for dependencies of ignition-msgs5
+[19.540s] -- Looking for ignition-math6 -- found version 6.15.1
+[19.562s] -- Checking for module 'tinyxml2'
+[19.593s] --   Found tinyxml2, version 9.0.0
+[19.715s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[19.810s] -- Looking for ignition-common3 -- found version 3.14.0
+[19.811s] -- Searching for dependencies of ignition-common3
+[19.835s] -- Looking for dlfcn.h - found
+[19.836s] -- Looking for libdl - found
+[19.838s] -- Found DL: TRUE  
+[19.930s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[19.939s] -- Searching for <ignition-common3> component [graphics]
+[19.945s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[19.945s] -- Searching for dependencies of ignition-common3-graphics
+[19.946s] -- Looking for ignition-math6 -- found version 6.15.1
+[20.006s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[20.007s] -- Searching for dependencies of ignition-fuel_tools4
+[20.214s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[20.291s] -- Checking for module 'jsoncpp'
+[20.320s] --   Found jsoncpp, version 1.9.5
+[20.389s] -- Found JSONCPP: TRUE  
+[20.416s] -- Checking for module 'libzip'
+[20.455s] --   Found libzip, version 1.7.3
+[20.516s] -- Found ZIP: TRUE  
+[20.517s] -- Looking for ignition-common3 -- found version 3.14.0
+[20.519s] -- Looking for ignition-math6 -- found version 6.15.1
+[20.520s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[20.584s] -- Gazebo version: 11.10
+[20.586s] -- Checking for module 'tbb'
+[20.609s] --   Found tbb, version 2021.5.0
+[20.682s] [31mCMake Error at CMakeLists.txt:12 (find_package):
+[20.682s]   By not providing "Findjoint_state_publisher_gui.cmake" in CMAKE_MODULE_PATH
+[20.683s]   this project has asked CMake to find a package configuration file provided
+[20.683s]   by "joint_state_publisher_gui", but CMake did not find one.
+[20.683s] 
+[20.684s]   Could not find a package configuration file provided by
+[20.684s]   "joint_state_publisher_gui" with any of the following names:
+[20.684s] 
+[20.684s]     joint_state_publisher_guiConfig.cmake
+[20.685s]     joint_state_publisher_gui-config.cmake
+[20.685s] 
+[20.685s]   Add the installation prefix of "joint_state_publisher_gui" to
+[20.685s]   CMAKE_PREFIX_PATH or set "joint_state_publisher_gui_DIR" to a directory
+[20.685s]   containing one of the above files.  If "joint_state_publisher_gui" provides
+[20.686s]   a separate development package or SDK, be sure it has been installed.
+[20.686s] 
+[20.686s] [0m
+[20.686s] -- Configuring incomplete, errors occurred!
+[20.687s] See also "/home/piyush/robot_ws/build/description/CMakeFiles/CMakeOutput.log".
+[20.708s] Invoked command in '/home/piyush/robot_ws/build/description' returned '1': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake /home/piyush/robot_ws/src/description -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/piyush/robot_ws/install/description
