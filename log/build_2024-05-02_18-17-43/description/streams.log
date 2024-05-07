@@ -1,0 +1,29 @@
+[0.030s] Invoking command in '/home/piyush/robot_ws/build/description': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --build /home/piyush/robot_ws/build/description -- -j4 -l4
+[0.083s] Invoked command in '/home/piyush/robot_ws/build/description' returned '0': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --build /home/piyush/robot_ws/build/description -- -j4 -l4
+[0.130s] Invoking command in '/home/piyush/robot_ws/build/description': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --install /home/piyush/robot_ws/build/description
+[0.139s] -- Install configuration: ""
+[0.139s] -- Execute custom install script
+[0.140s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/config/view_bot.rviz
+[0.140s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/launch/rsp.launch.py
+[0.141s] -- Symlinking: /home/piyush/robot_ws/install/description/share/description/launch/sim.launch.py
+[0.152s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/inertia_macros.xacro
+[0.152s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/joints.urdf.xacro
+[0.152s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/links.urdf.xacro
+[0.153s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/materials.urdf.xacro
+[0.153s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/robot.urdf.xacro
+[0.153s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/ament_index/resource_index/package_run_dependencies/description
+[0.154s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/ament_index/resource_index/parent_prefix_path/description
+[0.154s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/ament_prefix_path.sh
+[0.154s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/ament_prefix_path.dsv
+[0.155s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/path.sh
+[0.155s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/path.dsv
+[0.155s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.bash
+[0.156s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.sh
+[0.156s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.zsh
+[0.156s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.dsv
+[0.156s] -- Symlinking: /home/piyush/robot_ws/install/description/share/description/package.dsv
+[0.169s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/ament_index/resource_index/packages/description
+[0.170s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/cmake/descriptionConfig.cmake
+[0.170s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/cmake/descriptionConfig-version.cmake
+[0.170s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/package.xml
+[0.174s] Invoked command in '/home/piyush/robot_ws/build/description' returned '0': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --install /home/piyush/robot_ws/build/description

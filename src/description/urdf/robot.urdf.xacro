@@ -1,5 +1,10 @@
 <?xml version="1.0"?>
 <robot name="robot" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:include filename="links.urdf.xacro" />
+    <xacro:include filename="lidar.urdf.xacro" />
+    <!-- <xacro:include filename="camera.urdf.xacro" /> -->
+    <xacro:include filename="depth_camera.urdf.xacro" />
     <xacro:include filename="joints.urdf.xacro" />
+    <!-- <xacro:include filename="gazebo_control.xacro" /> -->
+    <xacro:include filename="ros2_control.xacro" />
 </robot>

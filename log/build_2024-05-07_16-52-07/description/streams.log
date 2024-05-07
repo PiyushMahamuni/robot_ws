@@ -1,0 +1,117 @@
+[0.016s] Invoking command in '/home/piyush/robot_ws/build/description': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake /home/piyush/robot_ws/src/description -DCMAKE_INSTALL_PREFIX=/home/piyush/robot_ws/install/description
+[0.032s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.179s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.190s] -- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)
+[0.222s] -- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.225s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.235s] -- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.249s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.269s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.414s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[0.415s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[0.482s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.484s] -- Found rmw_cyclonedds_cpp: 1.3.4 (/opt/ros/humble/share/rmw_cyclonedds_cpp/cmake)
+[0.521s] -- Using RMW implementation 'rmw_cyclonedds_cpp' as default
+[1.262s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[1.300s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.333s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.335s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.340s] -- Searching for dependencies of ignition-math6
+[1.342s] -- Looking for OGRE...
+[1.349s] -- Found Ogre Ghadamon (1.9.0)
+[1.350s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.361s] -- Looking for OGRE_Paging...
+[1.361s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.362s] -- Looking for OGRE_Terrain...
+[1.362s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.362s] -- Looking for OGRE_Property...
+[1.362s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.363s] -- Looking for OGRE_RTShaderSystem...
+[1.363s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.363s] -- Looking for OGRE_Volume...
+[1.363s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.363s] -- Looking for OGRE_Overlay...
+[1.364s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.513s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.513s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.514s] -- Searching for dependencies of ignition-transport8
+[1.536s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.550s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.556s] -- Checking for module 'libzmq >= 4'
+[1.573s] --   Found libzmq , version 4.3.4
+[1.633s] -- Checking for module 'uuid'
+[1.650s] --   Found uuid, version 2.37.2
+[1.692s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.693s] -- Searching for dependencies of ignition-msgs5
+[1.716s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.725s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.725s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.726s] -- Searching for dependencies of ignition-common3
+[1.726s] -- Looking for dlfcn.h - found
+[1.726s] -- Looking for libdl - found
+[1.742s] -- Searching for <ignition-common3> component [graphics]
+[1.742s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[1.743s] -- Searching for dependencies of ignition-common3-graphics
+[1.744s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.746s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[1.747s] -- Searching for dependencies of ignition-fuel_tools4
+[1.794s] -- Checking for module 'jsoncpp'
+[1.811s] --   Found jsoncpp, version 1.9.5
+[1.862s] -- Checking for module 'libzip'
+[1.878s] --   Found libzip, version 1.7.3
+[1.921s] -- Looking for ignition-common3 -- found version 3.14.0
+[1.922s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.923s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.925s] -- Gazebo version: 11.10
+[1.933s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.034s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[2.034s] -- Configured cppcheck include dirs: 
+[2.034s] -- Configured cppcheck exclude dirs and/or files: 
+[2.036s] -- Added test 'flake8' to check Python code syntax and style conventions
+[2.040s] -- Added test 'lint_cmake' to check CMake code style
+[2.042s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[2.054s] -- Added test 'uncrustify' to check C / C++ code style
+[2.054s] -- Configured uncrustify additional arguments: 
+[2.056s] -- Added test 'xmllint' to check XML markup files
+[2.058s] -- Configuring done
+[2.070s] -- Generating done
+[2.075s] -- Build files have been written to: /home/piyush/robot_ws/build/description
+[2.089s] Invoked command in '/home/piyush/robot_ws/build/description' returned '0': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake /home/piyush/robot_ws/src/description -DCMAKE_INSTALL_PREFIX=/home/piyush/robot_ws/install/description
+[2.092s] Invoking command in '/home/piyush/robot_ws/build/description': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --build /home/piyush/robot_ws/build/description -- -j4 -l4
+[2.144s] Invoked command in '/home/piyush/robot_ws/build/description' returned '0': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --build /home/piyush/robot_ws/build/description -- -j4 -l4
+[2.184s] Invoking command in '/home/piyush/robot_ws/build/description': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --install /home/piyush/robot_ws/build/description
+[2.193s] -- Install configuration: ""
+[2.193s] -- Execute custom install script
+[2.194s] -- Symlinking: /home/piyush/robot_ws/install/description/share/description/config/controllers.yaml
+[2.205s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/config/simulation.rviz
+[2.205s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/config/view_bot.rviz
+[2.205s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/launch/abstract.launch.py
+[2.206s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/launch/rsp.launch.py
+[2.206s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/launch/sim.launch.py
+[2.206s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/camera.urdf.xacro
+[2.207s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/depth_camera.urdf.xacro
+[2.207s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/gazebo_control.xacro
+[2.207s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/inertia_macros.xacro
+[2.207s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/joints.urdf.xacro
+[2.208s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/lidar.urdf.xacro
+[2.208s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/links.urdf.xacro
+[2.208s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/materials.urdf.xacro
+[2.209s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/robot.urdf.xacro
+[2.209s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/urdf/ros2_control.xacro
+[2.209s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/worlds/house.sdf
+[2.210s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/ament_index/resource_index/package_run_dependencies/description
+[2.210s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/ament_index/resource_index/parent_prefix_path/description
+[2.211s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/ament_prefix_path.sh
+[2.211s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/ament_prefix_path.dsv
+[2.211s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/path.sh
+[2.212s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/environment/path.dsv
+[2.212s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.bash
+[2.212s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.sh
+[2.213s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.zsh
+[2.213s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/local_setup.dsv
+[2.213s] -- Symlinking: /home/piyush/robot_ws/install/description/share/description/package.dsv
+[2.226s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/ament_index/resource_index/packages/description
+[2.226s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/cmake/descriptionConfig.cmake
+[2.226s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/cmake/descriptionConfig-version.cmake
+[2.226s] -- Up-to-date symlink: /home/piyush/robot_ws/install/description/share/description/package.xml
+[2.229s] Invoked command in '/home/piyush/robot_ws/build/description' returned '0': CMAKE_PREFIX_PATH=/home/piyush/ros2_ws/install/urdf_example:/home/piyush/ros2_ws/install/simple_pkg:/home/piyush/ros2_ws/install/py_srvcli:/home/piyush/ros2_ws/install/py_pubsub:/opt/ros/humble:/home/piyush/ros2_ws/install/rmp_ros2_bot_description:/home/piyush/ros2_ws/install/cpp_srvcli:/home/piyush/ros2_ws/install/assignment_1 /usr/bin/cmake --install /home/piyush/robot_ws/build/description
