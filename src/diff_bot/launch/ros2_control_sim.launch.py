@@ -17,10 +17,12 @@ def generate_launch_description() -> LaunchDescription:
     robot_description = xacro.process_file(xacro_file).toxml()
     args = {"robot_description": robot_description}
     rsp_launch = IncludeLaunchDescription(rsp_launch_description, launch_arguments=args.items())
+    rviz_config = os.path.join(pkg_share, "config", "sim.rviz")
     rviz = Node(
         package="rviz2",
         executable="rviz2",
-        output="screen"
+        output="screen",
+        arguments=["-d", rviz_config]
     )
 
     diff_drive_controller_spawner = Node(

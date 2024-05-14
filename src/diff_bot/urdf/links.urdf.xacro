@@ -5,7 +5,7 @@
 
     <link name="base_link" />
 
-    <link name="chassis">
+    <link name="chassis_link">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
@@ -23,13 +23,13 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:inertial_cuboid>
     </link>
-    <gazebo reference="chassis">
+    <gazebo reference="chassis_link">
         <mu1 value="0.001" />
         <mu2 value="0.001" />
         <material>Gazebo/Blue</material>
     </gazebo>
 
-    <link name="right_wheel">
+    <link name="right_wheel_link">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
@@ -47,11 +47,11 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:inertial_cylinder>
     </link>
-    <gazebo reference="right_wheel">
+    <gazebo reference="right_wheel_link">
         <material>Gazebo/Black</material>
     </gazebo>
 
-    <link name="left_wheel">
+    <link name="left_wheel_link">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
@@ -69,11 +69,11 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:inertial_cylinder>
     </link>
-    <gazebo reference="left_wheel">
+    <gazebo reference="left_wheel_link">
         <material>Gazebo/Black</material>
     </gazebo>
 
-    <link name="lidar">
+    <link name="lidar_link">
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
             <geometry>
@@ -91,11 +91,11 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:inertial_cylinder>
     </link>
-    <gazebo reference="lidar">
+    <gazebo reference="lidar_link">
         <material>Gazebo/Orange</material>
     </gazebo>
 
-    <link name="camera">
+    <link name="camera_link">
         <visual>
             <origin xyz="-0.007 0 0" rpy="0 0 0" />
             <geometry>
@@ -113,7 +113,9 @@
             <origin xyz="0 0 0" rpy="0 0 0" />
         </xacro:inertial_cuboid>
     </link>
-    <gazebo reference="camera">
+    <gazebo reference="camera_link">
         <material>Gazebo/Red</material>
     </gazebo>
+    
+    <link name="camera_sensor_link" />
 </robot>

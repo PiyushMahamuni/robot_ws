@@ -2,35 +2,41 @@
 <robot name="diff_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <joint name="chassis_joint" type="fixed">
         <parent link="base_link" />
-        <child link="chassis" />
+        <child link="chassis_link" />
         <origin xyz="0 0 0.017" rpy="0 0 0" />
     </joint>
 
     <joint name="right_wheel_joint" type="continuous">
-        <parent link="chassis" />
-        <child link="right_wheel" />
+        <parent link="chassis_link" />
+        <child link="right_wheel_link" />
         <origin xyz="-0.067 -0.082 0.008" rpy="0 0 0" />
         <limits effort="10" velocity="10" />
         <axis xyz="0 1 0" />
     </joint>
 
     <joint name="left_wheel_joint" type="continuous">
-        <parent link="chassis" />
-        <child link="left_wheel" />
+        <parent link="chassis_link" />
+        <child link="left_wheel_link" />
         <origin xyz="-0.067 0.082 0.008" rpy="0 0 ${pi}" />
         <limits effort="10" velocity="10" />
         <axis xyz="0 -1 0" />
     </joint>
 
     <joint name="lidar_joint" type="fixed">
-        <parent link="chassis" />
-        <child link="lidar" />
+        <parent link="chassis_link" />
+        <child link="lidar_link" />
         <origin xyz="0 0 0.065" rpy="0 0 0" />
     </joint>
     
     <joint name="camera_joint" type="fixed">
-        <parent link="chassis" />
-        <child link="camera" />
+        <parent link="chassis_link" />
+        <child link="camera_link" />
         <origin xyz="0.1 0 0.02" rpy="0 0 0" />
+    </joint>
+
+    <joint name="camera_sensor_joint" type="fixed">
+        <parent link="camera_link" />
+        <child link="camera_sensor_link" />
+        <origin xyz="0 0 0" rpy="${-pi / 2} 0 ${-pi / 2}" />
     </joint>
 </robot>
