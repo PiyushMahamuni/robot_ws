@@ -1,9 +1,0 @@
-/home/piyush/robot_ws/build/CMakeFiles/uninstall.dir
-/home/piyush/robot_ws/build/CMakeFiles/description_uninstall.dir
-/home/piyush/robot_ws/build/CMakeFiles/test.dir
-/home/piyush/robot_ws/build/CMakeFiles/edit_cache.dir
-/home/piyush/robot_ws/build/CMakeFiles/rebuild_cache.dir
-/home/piyush/robot_ws/build/CMakeFiles/list_install_components.dir
-/home/piyush/robot_ws/build/CMakeFiles/install.dir
-/home/piyush/robot_ws/build/CMakeFiles/install/local.dir
-/home/piyush/robot_ws/build/CMakeFiles/install/strip.dir

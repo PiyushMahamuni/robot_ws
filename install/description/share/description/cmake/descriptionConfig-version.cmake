@@ -1,1 +1,0 @@
-/home/piyush/robot_ws/build/description/ament_cmake_core/descriptionConfig-version.cmake

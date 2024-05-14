@@ -1,0 +1,119 @@
+<?xml version="1.0"?>
+<robot name="diff_bot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+    <xacro:include filename="materials.xacro" />
+    <xacro:include filename="inertia_macros.xacro" />
+
+    <link name="base_link" />
+
+    <link name="chassis">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Chassis.stl" />
+            </geometry>
+            <material name="blue" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Chassis.stl" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cuboid mass="1.4" x="0.15" y="0.2" z="0.07">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </xacro:inertial_cuboid>
+    </link>
+    <gazebo reference="chassis">
+        <mu1 value="0.001" />
+        <mu2 value="0.001" />
+        <material>Gazebo/Blue</material>
+    </gazebo>
+
+    <link name="right_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Wheel.stl" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Wheel.stl" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.02" radius="0.025" length="0.015">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </xacro:inertial_cylinder>
+    </link>
+    <gazebo reference="right_wheel">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <link name="left_wheel">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Wheel.stl" />
+            </geometry>
+            <material name="black" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Wheel.stl" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.02" radius="0.025" length="0.015">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </xacro:inertial_cylinder>
+    </link>
+    <gazebo reference="left_wheel">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <link name="lidar">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Lidar.stl" />
+            </geometry>
+            <material name="orange" />
+        </visual>
+        <collision>
+            <origin xyz="0 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Lidar.stl" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cylinder mass="0.08" radius="0.035" length="0.025">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </xacro:inertial_cylinder>
+    </link>
+    <gazebo reference="lidar">
+        <material>Gazebo/Orange</material>
+    </gazebo>
+
+    <link name="camera">
+        <visual>
+            <origin xyz="-0.007 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Camera.stl" />
+            </geometry>
+            <material name="red" />
+        </visual>
+        <collision>
+            <origin xyz="-0.007 0 0" rpy="0 0 0" />
+            <geometry>
+                <mesh filename="file://$(find diff_bot)/meshes/Camera.stl" />
+            </geometry>
+        </collision>
+        <xacro:inertial_cuboid mass="0.3" x="0.007" y="0.02" z="0.015">
+            <origin xyz="0 0 0" rpy="0 0 0" />
+        </xacro:inertial_cuboid>
+    </link>
+    <gazebo reference="camera">
+        <material>Gazebo/Red</material>
+    </gazebo>
+</robot>
