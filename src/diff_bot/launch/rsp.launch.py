@@ -17,14 +17,14 @@ def generate_launch_description() -> LaunchDescription:
         package="robot_state_publisher",
         executable="robot_state_publisher",
         output="screen",
-        parameters=params.items(),
+        parameters=[params]
     )
 
     return LaunchDescription(
         [
             DeclareLaunchArgument(
                 "use_sim_time",
-                use_sim_time,
+                default_value=use_sim_time,
                 description="use gazebo clock if set to true",
             ),
             rsp
