@@ -24,4 +24,8 @@
     <material name="red">
         <color rgba="1 0 0 1" />
     </material>
+
+    <material name="purple">
+        <color rgba="1 0 1 1" />
+    </material>
 </robot>

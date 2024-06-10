@@ -3,4 +3,5 @@
     <xacro:include filename="links.urdf.xacro" />
     <xacro:include filename="joints.urdf.xacro" />
     <xacro:include filename="diff_control.gazebo.xacro" />
+    <xacro:include filename="lidar.gazebo.xacro" />
 </robot>
