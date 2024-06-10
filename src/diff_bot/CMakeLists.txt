@@ -7,9 +7,11 @@ endif()
 
 # find dependencies
 find_package(ament_cmake REQUIRED)
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(robot_state_publisher REQUIRED)
+find_package(rviz2 REQUIRED)
+find_package(gazebo_ros REQUIRED)
+find_package(gazebo_plugins REQUIRED)
+find_package(sensor_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -23,7 +25,7 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
-install(DIRECTORY launch meshes urdf worlds config
+install(DIRECTORY config mesh urdf world launch
 DESTINATION share/${PROJECT_NAME})
 
 ament_package()
