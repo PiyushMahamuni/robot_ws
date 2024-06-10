@@ -12,7 +12,7 @@
             <max_wheel_acceleration>4</max_wheel_acceleration>
 
             <odometry_frame>odom</odometry_frame>
-            <ros_base_frame>base_link</ros_base_frame>
+            <ros_base_frame>base_footprint</ros_base_frame>
             <publish_odom>true</publish_odom>
             <publish_odom_tf>true</publish_odom_tf>
             <publish_wheel_tf>true</publish_wheel_tf>
