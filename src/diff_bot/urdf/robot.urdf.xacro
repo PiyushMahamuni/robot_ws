@@ -2,4 +2,5 @@
 <robot name="ultron" xmlns:xacro="http://www.ros.org/wiki/xacro">
     <xacro:include filename="links.urdf.xacro" />
     <xacro:include filename="joints.urdf.xacro" />
+    <xacro:include filename="diff_control.gazebo.xacro" />
 </robot>
