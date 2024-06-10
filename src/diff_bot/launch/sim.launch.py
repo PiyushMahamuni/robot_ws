@@ -3,6 +3,7 @@ from launch import LaunchDescription
 from launch.actions import TimerAction, IncludeLaunchDescription
 from ament_index_python import get_package_share_directory
 from launch_ros.actions import Node
+from launch.launch_description_sources import PythonLaunchDescriptionSource
 
 
 def generate_launch_description() -> LaunchDescription:
@@ -12,7 +13,12 @@ def generate_launch_description() -> LaunchDescription:
 
     gazebo_share = get_package_share_directory("gazebo_ros")
     gazebo_launch_file = os.path.join(gazebo_share, "launch", "gazebo.launch.py")
-    gazebo_launch_description = IncludeLaunchDescription(gazebo_launch_file)
+    world_file = os.path.join(pkg_share, "world", "house.world")
+    arguments = {"world": world_file, "use_sim_time": "true"}
+    gazebo_launch_description = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(gazebo_launch_file),
+        launch_arguments=arguments.items()
+    )
 
     spawn_entity = Node(
         package="gazebo_ros",
