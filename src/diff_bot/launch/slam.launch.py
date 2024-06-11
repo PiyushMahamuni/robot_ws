@@ -1,11 +1,13 @@
 import os
 from launch import LaunchDescription
-from launch.actions import IncludeLaunchDescription
+from launch.actions import IncludeLaunchDescription, TimerAction
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from ament_index_python import get_package_share_directory
+from launch.substitutions import LaunchConfiguration
 
 
 def generate_launch_description() -> LaunchDescription:
+    use_sim_time = LaunchConfiguration("use_sim_time", default=True)
     pkg_share = get_package_share_directory("diff_bot")
     sim_launch_file = os.path.join(pkg_share, "launch", "sim.launch.py")
     sim_launch_description = IncludeLaunchDescription(sim_launch_file)
@@ -22,6 +24,11 @@ def generate_launch_description() -> LaunchDescription:
         launch_arguments=arguments.items(),
     )
 
+    slam_launch_delayed = TimerAction(
+        period=10.0,
+        actions=[slam_launch_description]
+    )
+
     return LaunchDescription(
-        [sim_launch_description, rviz_launch_description, slam_launch_description]
+        [sim_launch_description, rviz_launch_description, slam_launch_delayed]
     )

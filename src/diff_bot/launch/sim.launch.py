@@ -27,7 +27,7 @@ def generate_launch_description() -> LaunchDescription:
     )
 
     delayed_spawner = TimerAction(
-        period=10.0,
+        period=6.0,
         actions=[spawn_entity]
     )
 
